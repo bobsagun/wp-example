@@ -1,0 +1,95 @@
+## Project
+node_modules/
+bower_components/
+/vendor/
+phpunit/
+*.flag
+
+## IDE
+.idea/
+*.iml
+
+## WordPress
+local.php
+public_html/wp/*
+!public_html/wp/.gitkeep
+public_html/content/uploads/*
+!public_html/content/uploads/index.php
+public_html/content/blogs.dir/
+public_html/content/upgrade/
+public_html/content/backup-db/
+public_html/content/advanced-cache.php
+public_html/content/wp-cache-config.php
+public_html/content/cache/
+public_html/content/backups/
+public_html/content/db.php
+public_html/content/object-cache.php
+public_html/content/w3tc-config/master.php
+public_html/sitemap.xml
+public_html/sitemap.xml.gz
+wp-cli.phar
+
+## Included Plugins
+public_html/content/plugins/js_composer
+public_html/content/plugins/revslider
+public_html/content/plugins/k-elements
+
+## Archives
+*.zip
+!public_html/content/themes/kleo/lib/inc/*.zip
+*.gz
+*.tar
+*.tgz
+*.7z
+
+# Logs
+*.log
+error_log
+
+## OS Files
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+public_html/.htaccess

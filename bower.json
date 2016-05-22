@@ -1,0 +1,20 @@
+{
+  "name": "Brandastic WP Boilerplate",
+  "version": "1.0",
+  "authors": [
+    "Brandastic <info@brandastic.com>"
+  ],
+  "description": "Boilerplate for WordPress projects",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+
+  }
+}

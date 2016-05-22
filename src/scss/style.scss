@@ -1,0 +1,655 @@
+.body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+// VARS
+
+$orange: #DF7650;
+$blue: #05668A;
+
+// FONTS
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,400italic,800);
+body,h1,h2,h3,h4,h5,h6,p {
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+// HEADER
+
+#header {
+	height: 136px !important;
+	margin-bottom: -136px;
+	
+
+	.navbar {
+		height: 100% !important;
+		
+
+		.sticky-wrapper {
+			height: 100% !important;
+
+			.kleo-main-header {
+				border-bottom: none;
+				// height: 100% !important;
+				padding-bottom: 23px;
+	padding-top: 23px;
+	background-color: rgba(255,255,255,0.9) !important;
+
+				.navbar-header {
+					height: 100% !important;
+					line-height: 100% !important;
+					.logo {
+						height: 100%;
+						a {
+							height: 100%;
+							img {
+								height: 100%;
+							}
+						}
+					}
+				}
+				.navbar-collapse {
+					margin-top: 20px;
+
+					ul.nav {
+						border-bottom: 3px solid #EEEEED;
+
+						li {
+							box-shadow: none;
+
+							a {
+								box-shadow: none;
+								    margin: auto;
+							    padding-left: 5px;
+							    padding-right: 5px;
+							    text-transform: uppercase;
+							    font-weight: bold;
+							    letter-spacing: 1px;
+							    margin-left: 3px;
+    							margin-right: 3px;
+
+    							.caret {
+    								padding-left: 0;
+    								margin-left: 0;
+    								    font-size: 12px;
+    							}
+
+
+
+								&:hover {
+									border-bottom: 3px solid #DF7650;
+									margin-bottom: -3px;
+								}
+							}
+							&.active {
+								a {
+									border-bottom: 3px solid #DF7650;
+									margin-bottom: -3px;
+								}
+								ul li a {
+									margin-bottom: 0;
+									border-bottom: #eeeeee 1px solid; 
+								}
+							}
+							&.open {
+								a {
+									border-bottom: 3px solid #DF7650;
+									margin-bottom: -3px;
+								}
+								ul li a {
+									margin-bottom: 0;
+									border-bottom: 1px solid #eeeeee; 
+								}
+							}
+							&.current-menu-parent {
+								a {
+									border-bottom: 3px solid #DF7650;
+									margin-bottom: -3px;
+								}
+								ul li a {
+									margin-bottom: 0;
+									border-bottom: 1px solid #eeeeee; 
+								}
+							}
+							.dropdown-menu {
+								// display: block;
+    							margin-top: 3px;
+
+								li {
+
+									a {
+										padding-left: 10px;
+										padding-right: 10px;
+										margin-bottom: 0	;
+										margin-right: 0;
+										margin-left: 0;
+
+										&:hover {
+											    border-bottom-style: solid;
+    										border-bottom-width: 1px;
+											border-bottom-color: #eeeeee;
+											background-color: $orange;
+											color: white;
+											margin-bottom: 0	;
+										}
+
+
+									}
+									&:last-child {
+										a {
+											border-bottom: none !important;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+}
+
+// FOOTER SOCKET
+
+#socket {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	    width: 100%;
+    position: fixed !important;
+    bottom: 0;
+
+	.txt {
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+
+	.form {
+
+		.gform_wrapper {
+			margin: auto;
+		}
+
+		form {
+
+			#input_1_1 {
+				width: 60%;
+				border:none;
+				color: #565759;
+				margin-bottom: 0;
+			}
+
+			label {
+				display: none;
+			}
+			* {
+				display: inline;
+			}
+			input[type=submit] {
+				transform: rotateZ(90deg);
+				    margin-left: -6px;
+			    border: none;
+			    width: 30px;
+			    background-color: $orange;
+			    color: white;
+
+			    &:hover {
+			    	background-color: $blue;
+			    }
+			}
+		}
+	}
+
+	.kleo-social-icons {
+			// text-align: center;
+			// padding: 0	;
+			display: inline-block;
+			    margin: auto;
+    padding-left: 5px;
+    margin-bottom: -10px;
+			li {
+				list-style: none;
+				display: inline-block;
+				float: left;
+				   	margin-left: 5px;
+				   	margin-right: 5px;
+
+
+				a {
+					  // background-color: $blue;
+					  //  font-size: 24px;
+					  //   color: white;
+					  
+					  //   padding: 5px;
+					  //   border-radius: 999px;
+					i {
+						    // background-color: #05668A;
+						    font-size: 24px;
+						    color: white;
+						    // border-radius: 999px;
+						    // width: 35px;
+						    // height: 35px;
+						    // display: block;
+						    // text-align: center;
+						    // line-height: 35px;
+						    	-webkit-transition: all 500ms ease-out ;
+					    -moz-transition: all 500ms ease-out ;
+					    -o-transition: all 500ms ease-out ;
+					    transition: all 500ms ease-out ;
+
+					}
+					.ts-text {
+						display: none;
+					}
+
+					&:hover i {
+							-webkit-transition: all 500ms ease-out ;
+					    -moz-transition: all 500ms ease-out ;
+					    -o-transition: all 500ms ease-out ;
+					    transition: all 500ms ease-out ;
+
+						color: $orange;
+						// background-color: transparent;
+					}
+				}
+			}
+		}
+
+}
+
+// TITLE SECTION
+
+#main {
+	.main-title {
+		padding-top: 200px;
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+		
+		.container {
+
+
+			h1.page-title {
+				background-color: rgba(255,255,255,0.9);
+				padding: 5px 10px;
+				color: $blue;
+				display: inline-block;
+				font-weight: bold;
+			}
+		}
+	}
+
+}
+
+// HOME
+
+body.home {
+
+	// HEADER
+	#header {
+		margin-bottom: -136px;
+		
+		.kleo-main-header {
+			background-color: rgba(255,255,255,0.9) !important;
+		}
+	}
+
+	.slider {
+
+
+		.voyagers-txt {
+		    text-transform: uppercase;
+		    font-weight: bolder;
+		    background: rgba(5, 102, 138, 0.7);
+		    padding: 30px 40px;
+		    letter-spacing: 2px;
+		}
+		.voyagers-btn {
+			margin-top: 50px;
+
+			a {
+				padding: 10px 15px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				border-radius: 3px;
+				font-size: 16px !important;
+				font-weight: bold !important;
+				line-height: 26px !important;
+				font-family: 'Open Sans', sans-serif !important;
+				-webkit-transition: all 500ms ease-out ;
+					    -moz-transition: all 500ms ease-out ;
+					    -o-transition: all 500ms ease-out ;
+					    transition: all 500ms ease-out ;
+
+
+				&.learn {
+						color: $blue;
+						background-color: white;
+
+					&:hover {
+						-webkit-transition: all 500ms ease-out ;
+					    -moz-transition: all 500ms ease-out ;
+					    -o-transition: all 500ms ease-out ;
+					    transition: all 500ms ease-out  !important;
+
+						background-color: $blue;
+						color: white;
+					}
+				}
+				&.join {
+						color: white;
+						background-color: $orange;
+
+					&:hover {
+						-webkit-transition: all 500ms ease-out ;
+					    -moz-transition: all 500ms ease-out ;
+					    -o-transition: all 500ms ease-out ;
+					    transition: all 500ms ease-out  !important;
+
+						background-color: white;
+						color: $orange;
+					}
+				}
+			}
+		}
+
+
+	}
+
+	.lead {
+
+		h1 {
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 24px;
+			line-height: 34px;
+			font-weight: bold;
+		}
+		hr {
+			width: 10%;
+			// margin: auto;
+			border-top: 5px solid $blue;
+			border-radius: 5px;
+		}
+		p {
+			font-weight: 500;
+			width: 70%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.link-img {
+
+		.vc_col-sm-4 {
+		    padding-left: 7px;
+		    padding-right: 7px;
+		    min-height: 380px;
+
+		    .vc_column-inner {
+		    	min-height: 380px;
+		    	height: 100%;
+		    	padding: 0;
+
+		    	.wpb_wrapper  {
+		    		height: 100%;
+		    	}
+
+		    	.kleo_text_column {
+		    		opacity: 0;
+		    		display: block;
+		    		height: 100%;
+		    		background-color: rgba(5, 102, 138, 0.7);
+				    padding: 22% 10px;
+				    top: 0;
+				    color: white;
+				     -webkit-transition: opacity 500ms ease-out ;
+					    -moz-transition: opacity 500ms ease-out ;
+					    -o-transition: opacity 500ms ease-out ;
+					    transition: opacity 500ms ease-out ;
+
+		    		hr {
+						width: 10%;
+						// margin: auto;
+						border-top: 5px solid $orange;
+						border-radius: 5px;
+					}
+
+					h3 {
+						color: white !important;
+						    font-size: 20px;
+						    line-height: 30px;
+						    font-weight: 600;
+						    letter-spacing: 2px;
+					}
+					p {
+						    color: white;
+						    font-size: 14px;
+						    width: 80%;
+						    margin-left: auto;
+						    margin-right: auto;
+						    line-height: 24px;
+						    letter-spacing: 2px;
+					}
+					a {
+						color: white;
+						border: 3px solid white;
+						background-color: transparent;
+						text-transform: uppercase;
+						    border-radius: 3px;
+					    margin-top: 10px;
+					    display: inline-block;
+					    padding: 5px 10px;
+					    -webkit-transition: all 500ms ease-out ;
+					    -moz-transition: all 500ms ease-out ;
+					    -o-transition: all 500ms ease-out ;
+					    transition: all 500ms ease-out ;
+
+						&:hover {
+							-webkit-transition: all 500ms ease-out ;
+					    -moz-transition: all 500ms ease-out ;
+					    -o-transition: all 500ms ease-out ;
+					    transition: all 500ms ease-out ;
+							background-color: $blue;
+							border-color: $blue;
+						}
+					}
+		    	}
+		    }
+
+		    &:hover .kleo_text_column   {
+		    	opacity: 1;
+		    	 -webkit-transition: opacity 500ms ease-out ;
+			    -moz-transition: opacity 500ms ease-out ;
+			    -o-transition: opacity 500ms ease-out ;
+			    transition: opacity 500ms ease-out ;
+		    }
+		}
+
+	}
+
+	.events {
+
+		.events {
+
+			.title {
+				    border-bottom: 10px solid $orange;
+				h2 {
+					margin: auto;
+					    margin-left: 6%;
+					    background: $orange;
+					    display: inline-block;
+					    padding: 10px;
+					    font-size: 24px;
+					    color: white !important;
+					    text-transform: uppercase;
+					    font-weight: bold;
+					    letter-spacing: 1px;
+				}
+			}
+			.event {
+				    padding-top: 10px;
+				    padding-bottom: 10px;
+				    padding-left: 6%;
+				    padding-right: 6%;
+				    color: $blue;
+				.day {
+
+				}
+				.datedate {
+					letter-spacing: 1px;
+				}
+				.name { 
+
+				}
+				.link {
+					    text-align: center;
+
+					    a {
+					    	border: #87B8B7 2px solid;
+					    	border-radius: 2px;
+					    	text-transform: uppercase;
+					    	color: $blue;
+					    	letter-spacing: 2px;
+					    	    padding: 3px 10px;
+					    	    font-weight: bold;
+
+					    	    &:hover {
+					    	    	background-color: $blue;
+					    	    	border-color: $blue;
+					    	    	color: white;
+					    	    }
+					    }
+				}
+				&:nth-child(2n) {
+					background-color: #ECECED;
+				}
+				&:nth-child(2n+1) {
+					background-color: white;
+				}
+			}
+		}
+	}
+
+	.social {
+
+		h1 {
+			    text-transform: uppercase;
+			    letter-spacing: 1px;
+			    font-size: 24px;
+			    line-height: 34px;
+			    font-weight: bold;
+		}
+		hr {
+		    width: 10%;
+		    border-top: 5px solid $orange;
+		    border-radius: 5px;
+		}
+		p {
+			font-size: 18px;
+			    letter-spacing: 2px;
+
+
+		}
+
+		.kleo-social-icons {
+			text-align: center;
+			padding: 0	;
+
+			li {
+				list-style: none;
+				display: inline-block;
+				   margin-right: 15px;
+				   margin-left: 15px;
+
+
+				a {
+					  // background-color: $blue;
+					  //  font-size: 24px;
+					  //   color: white;
+					  
+					  //   padding: 5px;
+					  //   border-radius: 999px;
+					i {
+						    background-color: #05668A;
+						    font-size: 24px;
+						    color: white;
+						    border-radius: 999px;
+						    width: 35px;
+						    height: 35px;
+						    display: block;
+						    text-align: center;
+						    line-height: 35px;
+						    	-webkit-transition: all 500ms ease-out ;
+					    -moz-transition: all 500ms ease-out ;
+					    -o-transition: all 500ms ease-out ;
+					    transition: all 500ms ease-out ;
+
+					}
+					.ts-text {
+						display: none;
+					}
+
+					&:hover i {
+							-webkit-transition: all 500ms ease-out ;
+					    -moz-transition: all 500ms ease-out ;
+					    -o-transition: all 500ms ease-out ;
+					    transition: all 500ms ease-out ;
+
+						color: $blue;
+						background-color: transparent;
+					}
+				}
+			}
+		}
+
+		.kleo-gallery {
+
+			.kleo-carousel-items {
+				padding-right: 50px;
+				padding-left: 50px;
+			}
+
+			.kleo-carousel a {
+				padding-right: 20px;
+				padding-left: 20px;
+
+				img {
+
+
+				}
+				.hover-element {
+					display: none !important;
+				}
+			}
+			.carousel-arrow {
+
+				.carousel-prev {
+					left: 0!important;
+				}
+
+				.carousel-next {
+					right: 0!important;
+				}
+				a {
+					display: block;
+					background-color: transparent;
+					color: #D5D8D8;
+					font-size: 50px;
+					top: 35%;
+					i {
+
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+
+

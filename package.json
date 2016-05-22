@@ -1,0 +1,22 @@
+{
+  "name": "BrandasticWP",
+  "version": "1.0.0",
+  "description": "Brandastic WordPress boilerplate",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandastic",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "del": "^1.2.0",
+    "event-stream": "^3.3.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-sass": "^2.0.1",
+    "gulp-uglify": "^1.2.0",
+    "gulp-watch": "^4.2.4",
+    "run-sequence": "^1.1.0"
+  }
+}
